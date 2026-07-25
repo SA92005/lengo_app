@@ -11,7 +11,7 @@ abstract class AuthRepository {
 
   Future<AuthEntity> signInWithGoogle();
 
-  Future<AuthEntity> forgotPassword({required String email});
+  Future<void> forgotPassword({required String email});
 
   Future<void> logOut();
 }
