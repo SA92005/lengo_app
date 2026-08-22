@@ -9,13 +9,14 @@ import 'package:lenguo_app/features/auth/domain/usecases/auth_log_out.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_login_usecase.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_register_usecase.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_sign_in_with_google.dart';
+import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart';
 
 final sl = GetIt.instance;
 // ===============================================================
 // auth
 // ===============================================================
 
-//auth
+//authusecase
 Future<void> init() async {
   sl.registerLazySingleton(() => AuthForgotPassword(sl()));
   sl.registerLazySingleton(() => AuthLogOut(sl()));
@@ -31,4 +32,15 @@ Future<void> init() async {
 
   //repo
   sl.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl(sl()));
+
+  //cubit
+  sl.registerFactory(
+    () => AuthCubit(
+      loginUseCase: sl(),
+      registerUseCase: sl(),
+      forgotPasswordUseCase: sl(),
+      logOutUseCase: sl(),
+      signInWithGoogleUseCase: sl(),
+    ),
+  );
 }
