@@ -1,5 +1,4 @@
 import 'package:lenguo_app/features/auth/data/models/auth_model.dart';
-import 'package:lenguo_app/features/auth/domain/entity/auth_entity.dart';
 
 abstract class AuthDataSource {
   Future<AuthModel> login({required String email, required String password});
