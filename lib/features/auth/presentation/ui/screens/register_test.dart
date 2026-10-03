@@ -52,8 +52,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       final uid = userCredential.user!.uid;
 
-      print("Auth Success UID: $uid");
-
       // Save user data in Firestore
       await FirebaseFirestore.instance.collection("users").doc(uid).set({
         "uid": uid,
@@ -65,8 +63,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         "createdAt": FieldValue.serverTimestamp(),
       });
 
-      print("Firestore Success");
-
       if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -76,14 +72,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
       print("AUTH ERROR: ${e.code}");
-      print(e.message);
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(e.message ?? "Authentication Error")),
       );
     } on FirebaseException catch (e) {
       print("FIRESTORE ERROR: ${e.code}");
-      print(e.message);
 
       ScaffoldMessenger.of(
         context,

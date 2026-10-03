@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "word": "Cat",
+    "translation": "قطة",
+    "example": "The cat is sleeping.",
+    "exampleTranslation": "القطة نائمة.",
+    "imageUrl": "https://i.pinimg.com/236x/34/dc/5f/34dc5f7936988fe9290505eba7e638e1.jpg"
+  },
+  {
+    "id": 2,
+    "word": "Dog",
+    "translation": "كلب",
+    "example": "The dog is playing.",
+    "exampleTranslation": "الكلب يلعب.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/082/288/535/small/dog-running-with-red-ball-toy-happy-dog-running-with-red-ball-featuring-pet-animal-canine-play-a-vivid-animal-wallpaper-ideal-for-design-and-print-photo.jpg"
+  },
+  {
+    "id": 3,
+    "word": "Lion",
+    "translation": "أسد",
+    "example": "The lion is strong.",
+    "exampleTranslation": "الأسد قوي.",
+    "imageUrl": "https://w0.peakpx.com/wallpaper/406/282/HD-wallpaper-lion-strong-lion.jpg"
+  },
+  {
+    "id": 4,
+    "word": "Elephant",
+    "translation": "فيل",
+    "example": "The elephant is very big.",
+    "exampleTranslation": "الفيل كبير جدًا.",
+    "imageUrl": "https://cdn.pixabay.com/photo/2023/09/14/19/46/elephant-8253639_640.jpg"
+  },
+  {
+    "id": 5,
+    "word": "Monkey",
+    "translation": "قرد",
+    "example": "The monkey is climbing the tree.",
+    "exampleTranslation": "القرد يتسلق الشجرة.",
+    "imageUrl": "https://images.stockcake.com/public/3/f/0/3f0a176a-fecf-4d22-a79d-47c8097d8d44_large/monkey-climbing-tree-stockcake.jpg"
+  },
+  {
+    "id": 6,
+    "word": "Horse",
+    "translation": "حصان",
+    "example": "The horse is running.",
+    "exampleTranslation": "الحصان يجري.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 7,
+    "word": "Rabbit",
+    "translation": "أرنب",
+    "example": "The rabbit is eating a carrot.",
+    "exampleTranslation": "الأرنب يأكل جزرة.",
+    "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e925a94?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": 8,
+    "word": "Bird",
+    "translation": "طائر",
+    "example": "The bird is flying.",
+    "exampleTranslation": "الطائر يطير.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 9,
+    "word": "Fish",
+    "translation": "سمكة",
+    "example": "The fish is swimming.",
+    "exampleTranslation": "السمكة تسبح.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 10,
+    "word": "Giraffe",
+    "translation": "زرافة",
+    "example": "The giraffe has a long neck.",
+    "exampleTranslation": "الزرافة لها رقبة طويلة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 11,
+    "word": "Zebra",
+    "translation": "حمار وحشي",
+    "example": "The zebra has black and white stripes.",
+    "exampleTranslation": "الحمار الوحشي لديه خطوط سوداء وبيضاء.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 12,
+    "word": "Bear",
+    "translation": "دب",
+    "example": "The bear is looking for food.",
+    "exampleTranslation": "الدب يبحث عن الطعام.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 13,
+    "word": "Tiger",
+    "translation": "نمر",
+    "example": "The tiger is walking in the forest.",
+    "exampleTranslation": "النمر يمشي في الغابة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 14,
+    "word": "Wolf",
+    "translation": "ذئب",
+    "example": "The wolf lives in the forest.",
+    "exampleTranslation": "الذئب يعيش في الغابة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 15,
+    "word": "Fox",
+    "translation": "ثعلب",
+    "example": "The fox is very clever.",
+    "exampleTranslation": "الثعلب ذكي جدًا.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 16,
+    "word": "Cow",
+    "translation": "بقرة",
+    "example": "The cow is eating grass.",
+    "exampleTranslation": "البقرة تأكل العشب.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 17,
+    "word": "Sheep",
+    "translation": "خروف",
+    "example": "The sheep is on the farm.",
+    "exampleTranslation": "الخروف في المزرعة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 18,
+    "word": "Goat",
+    "translation": "ماعز",
+    "example": "The goat is eating leaves.",
+    "exampleTranslation": "الماعز يأكل أوراق الشجر.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 19,
+    "word": "Chicken",
+    "translation": "دجاجة",
+    "example": "The chicken is in the yard.",
+    "exampleTranslation": "الدجاجة في الفناء.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 20,
+    "word": "Duck",
+    "translation": "بطة",
+    "example": "The duck is swimming in the pond.",
+    "exampleTranslation": "البطة تسبح في البركة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 21,
+    "word": "Pig",
+    "translation": "خنزير",
+    "example": "The pig is on the farm.",
+    "exampleTranslation": "الخنزير في المزرعة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 22,
+    "word": "Deer",
+    "translation": "غزال",
+    "example": "The deer is running through the forest.",
+    "exampleTranslation": "الغزال يجري عبر الغابة.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 23,
+    "word": "Kangaroo",
+    "translation": "كنغر",
+    "example": "The kangaroo can jump very far.",
+    "exampleTranslation": "الكنغر يستطيع القفز لمسافة بعيدة جدًا.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 24,
+    "word": "Penguin",
+    "translation": "بطريق",
+    "example": "The penguin lives in a cold place.",
+    "exampleTranslation": "البطريق يعيش في مكان بارد.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 25,
+    "word": "Dolphin",
+    "translation": "دلفين",
+    "example": "The dolphin is swimming in the sea.",
+    "exampleTranslation": "الدلفين يسبح في البحر.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 26,
+    "word": "Shark",
+    "translation": "سمكة قرش",
+    "example": "The shark is swimming in the ocean.",
+    "exampleTranslation": "سمكة القرش تسبح في المحيط.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 27,
+    "word": "Turtle",
+    "translation": "سلحفاة",
+    "example": "The turtle moves slowly.",
+    "exampleTranslation": "السلحفاة تتحرك ببطء.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 28,
+    "word": "Snake",
+    "translation": "ثعبان",
+    "example": "The snake is hiding in the grass.",
+    "exampleTranslation": "الثعبان يختبئ في العشب.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 29,
+    "word": "Frog",
+    "translation": "ضفدع",
+    "example": "The frog is jumping.",
+    "exampleTranslation": "الضفدع يقفز.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  },
+  {
+    "id": 30,
+    "word": "Butterfly",
+    "translation": "فراشة",
+    "example": "The butterfly is flying over the flowers.",
+    "exampleTranslation": "الفراشة تطير فوق الزهور.",
+    "imageUrl": "https://static.vecteezy.com/system/resources/thumbnails/009/171/100/small/demo-symbol-concept-words-demo-on-wooden-blocks-photo.jpg"
+  }
+]
