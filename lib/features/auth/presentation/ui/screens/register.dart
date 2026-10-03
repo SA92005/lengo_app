@@ -6,7 +6,7 @@ import 'package:lenguo_app/core/theme/app_text_style.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_states.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/screens/login.dart';
-import 'package:lenguo_app/features/auth/presentation/ui/widgets/auth_button.dart';
+import 'package:lenguo_app/core/common_wedgets/custom_button.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/custom_text_form_field.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/login_and_register_container.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/login_and_register_footer.dart';
@@ -33,80 +33,90 @@ class _RegisterState extends State<Register> {
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,
         body: SingleChildScrollView(
-          child: BlocConsumer<AuthCubit, AuthState>(
-            listener: (context, state) {
-              if (state is AuthSuccess) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Account Created Successfully")),
-                );
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: BlocConsumer<AuthCubit, AuthState>(
+              listener: (context, state) {
+                if (state is AuthSuccess) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text("Account Created Successfully"),
+                    ),
+                  );
 
-                Navigator.pop(context);
-              }
+                  Navigator.pop(context);
+                }
 
-              if (state is AuthError) {
-                ScaffoldMessenger.of(
-                  context,
-                ).showSnackBar(SnackBar(content: Text(state.message)));
-              }
-            },
-            builder: (context, state) => Column(
-              children: [
-                SizedBox(height: 60),
-                LoginAndRegisterContainer(icon: AppIcons.registerIcon),
-                SizedBox(height: 10),
-                Text(
-                  'Create Account 🚀',
-                  style: AppTextStyle.loginAndRegisterTitle,
-                ),
-                SizedBox(height: 60),
-                CustomTextFormField(
-                  controller: nameController,
-                  hintText: 'name',
-                ),
-                CustomTextFormField(
-                  controller: emailController,
-                  hintText: 'e-mail',
-                ),
-                CustomTextFormField(
-                  controller: passwordController,
-                  hintText: 'password',
-                  isObsecure: isObsecure,
-                  suffixIcon: IconButton(
-                    onPressed: () {
-                      setState(() {
-                        isObsecure = !isObsecure;
-                      });
-                    },
-                    icon: Icon(
-                      isObsecure
-                          ? Icons.visibility_off_outlined
-                          : Icons.visibility_outlined,
+                if (state is AuthError) {
+                  ScaffoldMessenger.of(
+                    context,
+                  ).showSnackBar(SnackBar(content: Text(state.message)));
+                }
+              },
+              builder: (context, state) => Column(
+                children: [
+                  SizedBox(height: 60),
+                  LoginAndRegisterContainer(icon: AppIcons.registerIcon),
+                  SizedBox(height: 10),
+                  Text(
+                    'Create Account 🚀',
+                    style: AppTextStyle.loginAndRegisterTitle,
+                  ),
+                  Text(
+                    'Create an account to start your language learning journey.',
+                    style: AppTextStyle.loginAndRegisterSubtitle,
+                    textAlign: .center,
+                  ),
+                  SizedBox(height: 50),
+                  CustomTextFormField(
+                    controller: nameController,
+                    hintText: 'name',
+                  ),
+                  CustomTextFormField(
+                    controller: emailController,
+                    hintText: 'e-mail',
+                  ),
+                  CustomTextFormField(
+                    controller: passwordController,
+                    hintText: 'password',
+                    isObsecure: isObsecure,
+                    suffixIcon: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          isObsecure = !isObsecure;
+                        });
+                      },
+                      icon: Icon(
+                        isObsecure
+                            ? Icons.visibility_off_outlined
+                            : Icons.visibility_outlined,
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(height: MediaQuery.of(context).size.height * 0.15),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.10),
 
-                AuthButton(
-                  onPressed: () {
-                    context.read<AuthCubit>().register(
-                      name: nameController.text.trim(),
-                      email: emailController.text.trim(),
-                      password: passwordController.text.trim(),
-                    );
-                  },
-                  text: 'Register',
-                ),
-                LoginAndRegisterFooter(
-                  text1: "Already have an account?",
-                  text2: "Login",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => Login()),
-                    );
-                  },
-                ),
-              ],
+                  CustomButton(
+                    onPressed: () {
+                      context.read<AuthCubit>().register(
+                        name: nameController.text.trim(),
+                        email: emailController.text.trim(),
+                        password: passwordController.text.trim(),
+                      );
+                    },
+                    text: 'Register',
+                  ),
+                  LoginAndRegisterFooter(
+                    text1: "Already have an account?",
+                    text2: "Login",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => Login()),
+                      );
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ),

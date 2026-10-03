@@ -28,3 +28,10 @@ class LanguageSelectionDatasourceImpl implements LanguageSelectionDatasource {
     await sharedPreferences.setString(languageKey, language.languageCode);
   }
 }
+
+@module
+abstract class SharedPreferencesModule {
+  @preResolve
+  Future<SharedPreferences> get sharedPreferences =>
+      SharedPreferences.getInstance();
+}

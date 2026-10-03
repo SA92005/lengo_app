@@ -5,12 +5,12 @@ import 'package:lenguo_app/core/theme/app_icons.dart';
 import 'package:lenguo_app/core/theme/app_text_style.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_states.dart';
-import 'package:lenguo_app/features/auth/presentation/ui/screens/home_screen.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/screens/register.dart';
-import 'package:lenguo_app/features/auth/presentation/ui/widgets/auth_button.dart';
+import 'package:lenguo_app/core/common_wedgets/custom_button.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/custom_text_form_field.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/login_and_register_container.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/widgets/login_and_register_footer.dart';
+import 'package:lenguo_app/features/language_selection/presentation/ui/screens/selection_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
                 if (state is AuthSuccess) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                    MaterialPageRoute(builder: (context) => SelectionScreen()),
                   );
                 }
                 if (state is AuthError) {
@@ -102,7 +102,7 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                     SizedBox(height: MediaQuery.of(context).size.height * 0.15),
-                    AuthButton(
+                    CustomButton(
                       onPressed: () {
                         context.read<AuthCubit>().login(
                           email: emailController.text.trim(),
