@@ -46,6 +46,10 @@ import 'package:lenguo_app/features/language_selection/domain/usecase/language_s
     as _i244;
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_cubit.dart'
     as _i843;
+import 'package:lenguo_app/features/vocablaries/domain/repository/vocablaries_repository.dart'
+    as _i339;
+import 'package:lenguo_app/features/vocablaries/domain/usecase/vocablaries_usecase.dart'
+    as _i126;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -61,6 +65,9 @@ extension GetItInjectableX on _i174.GetIt {
     await gh.factoryAsync<_i460.SharedPreferences>(
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
+    );
+    gh.factory<_i126.GetVocabulary>(
+      () => _i126.GetVocabulary(gh<_i339.VocabulariesRepository>()),
     );
     gh.factory<_i101.LanguageSelectionDatasource>(
       () => _i722.LanguageSelectionDatasourceImpl(

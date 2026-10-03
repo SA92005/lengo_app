@@ -21,8 +21,7 @@ class LanguageSelectionCubit extends Cubit<LanguageSelectionState> {
 
     try {
       final language = await getSelectedLanguageUseCase();
-      print("Saved language code: ${language?.languageCode}");
-      print("Saved language name: ${language?.languageName}");
+
       if (language == null) {
         emit(LanguageSelectionInitial());
       } else {
