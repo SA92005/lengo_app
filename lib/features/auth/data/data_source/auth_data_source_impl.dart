@@ -1,8 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:injectable/injectable.dart';
 import 'package:lenguo_app/core/errors/exceptions.dart';
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source.dart';
 import 'package:lenguo_app/features/auth/data/models/auth_model.dart';
 
+@Injectable(as: AuthDataSource)
+@lazySingleton
 class AuthDataSourceImpl implements AuthDataSource {
   final FirebaseAuth firebaseAuth;
 
@@ -67,4 +70,9 @@ class AuthDataSourceImpl implements AuthDataSource {
   Future<AuthModel> signInWithGoogle() {
     throw UnimplementedError();
   }
+}
+
+@module
+abstract class FirebaseModule {
+  FirebaseAuth get firebaseAuth => FirebaseAuth.instance;
 }

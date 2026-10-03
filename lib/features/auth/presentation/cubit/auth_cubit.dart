@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'package:lenguo_app/core/errors/exceptions.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_forgot_password.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_log_out.dart';
@@ -7,6 +8,7 @@ import 'package:lenguo_app/features/auth/domain/usecases/auth_register_usecase.d
 import 'package:lenguo_app/features/auth/domain/usecases/auth_sign_in_with_google.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_states.dart';
 
+@injectable
 class AuthCubit extends Cubit<AuthState> {
   final AuthLoginUsecase loginUseCase;
   final AuthRegisterUsecase registerUseCase;

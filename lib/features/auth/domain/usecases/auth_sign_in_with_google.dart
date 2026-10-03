@@ -1,6 +1,8 @@
+import 'package:injectable/injectable.dart';
 import 'package:lenguo_app/features/auth/domain/entity/auth_entity.dart';
 import 'package:lenguo_app/features/auth/domain/repository/auth_repository.dart';
 
+@injectable
 class AuthSignInWithGoogle {
   final AuthRepository repository;
   AuthSignInWithGoogle(this.repository);

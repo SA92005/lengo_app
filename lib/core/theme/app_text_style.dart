@@ -5,9 +5,10 @@ abstract class AppTextStyle {
   static const TextStyle loginAndRegisterTitle = TextStyle(
     fontSize: 28,
     fontWeight: FontWeight.bold,
+    color: AppColors.titleColor,
   );
   static const TextStyle loginAndRegisterSubtitle = TextStyle(
-    color: AppColors.greyColor,
+    color: AppColors.subtitleColor,
     fontSize: 15,
     height: 1.5,
   );
