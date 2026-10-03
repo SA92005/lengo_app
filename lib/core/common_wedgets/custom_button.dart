@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lenguo_app/core/theme/app_colors.dart';
 import 'package:lenguo_app/core/theme/app_text_style.dart';
 
-class AuthButton extends StatelessWidget {
-  const AuthButton({super.key, required this.onPressed, required this.text});
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key, required this.onPressed, required this.text});
   final void Function()? onPressed;
   final String text;
   @override

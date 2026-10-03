@@ -1,7 +1,9 @@
+import 'package:injectable/injectable.dart';
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source.dart';
 import 'package:lenguo_app/features/auth/domain/entity/auth_entity.dart';
 import 'package:lenguo_app/features/auth/domain/repository/auth_repository.dart';
 
+@Injectable(as: AuthRepository)
 class AuthRepositoryImpl implements AuthRepository {
   final AuthDataSource authDataSource;
 
