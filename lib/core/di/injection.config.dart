@@ -46,6 +46,12 @@ import 'package:lenguo_app/features/language_selection/domain/usecase/language_s
     as _i244;
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_cubit.dart'
     as _i843;
+import 'package:lenguo_app/features/vocablaries/data/datasource/vocablaries_datasource.dart'
+    as _i1037;
+import 'package:lenguo_app/features/vocablaries/data/datasource/vocblaries_datasource_impl.dart'
+    as _i160;
+import 'package:lenguo_app/features/vocablaries/data/repository/vocblaries_repository_impl.dart'
+    as _i84;
 import 'package:lenguo_app/features/vocablaries/domain/repository/vocablaries_repository.dart'
     as _i339;
 import 'package:lenguo_app/features/vocablaries/domain/usecase/vocablaries_usecase.dart'
@@ -66,8 +72,13 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.sharedPreferences,
       preResolve: true,
     );
-    gh.factory<_i126.GetVocabulary>(
-      () => _i126.GetVocabulary(gh<_i339.VocabulariesRepository>()),
+    gh.factory<_i1037.VocabulariesDataSource>(
+      () => _i160.VocabulariesDatasourceImpl(),
+    );
+    gh.factory<_i339.VocabulariesRepository>(
+      () => _i84.VocabulariesRepositoryImpl(
+        dataSource: gh<_i1037.VocabulariesDataSource>(),
+      ),
     );
     gh.factory<_i101.LanguageSelectionDatasource>(
       () => _i722.LanguageSelectionDatasourceImpl(
@@ -84,6 +95,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i382.LanguageSelectionRepositoryImpl(
         localDataSource: gh<_i101.LanguageSelectionDatasource>(),
       ),
+    );
+    gh.factory<_i126.GetVocabulary>(
+      () => _i126.GetVocabulary(gh<_i339.VocabulariesRepository>()),
     );
     gh.factory<_i239.LanguageSelectionGetSelectedLanguageUsecase>(
       () => _i239.LanguageSelectionGetSelectedLanguageUsecase(
