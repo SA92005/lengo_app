@@ -1,5 +1,5 @@
 class VocablariesEntity {
-  final int id;
+  final String id;
   final String word;
   final String translation;
   final String example;
