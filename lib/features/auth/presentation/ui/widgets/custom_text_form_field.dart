@@ -9,20 +9,21 @@ class CustomTextFormField extends StatelessWidget {
     required this.hintText,
     this.prefixIcon,
     this.isObsecure = false,
-
+    required this.validator,
     this.suffixIcon,
   });
   final TextEditingController controller;
   final String hintText;
   final Icon? prefixIcon;
   final bool isObsecure;
-  // void Function()? onPressed;
   final Widget? suffixIcon;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
       child: TextFormField(
+        validator: validator,
         controller: controller,
         obscureText: isObsecure,
         decoration: InputDecoration(

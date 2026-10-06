@@ -1,4 +1,6 @@
 import 'package:injectable/injectable.dart';
+import 'package:lenguo_app/core/errors/exceptions.dart';
+import 'package:lenguo_app/core/errors/failures.dart';
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source.dart';
 import 'package:lenguo_app/features/auth/domain/entity/auth_entity.dart';
 import 'package:lenguo_app/features/auth/domain/repository/auth_repository.dart';
@@ -14,12 +16,16 @@ class AuthRepositoryImpl implements AuthRepository {
     required String email,
     required String password,
   }) async {
-    final authModel = await authDataSource.login(
-      email: email,
-      password: password,
-    );
+    try {
+      final authModel = await authDataSource.login(
+        email: email,
+        password: password,
+      );
 
-    return authModel.toEntity();
+      return authModel.toEntity();
+    } on ServerException catch (e) {
+      throw ServerFailure(message: e.message);
+    }
   }
 
   @override
@@ -28,23 +34,35 @@ class AuthRepositoryImpl implements AuthRepository {
     required String password,
     required String email,
   }) async {
-    final authModel = await authDataSource.register(
-      name: name,
-      password: password,
-      email: email,
-    );
+    try {
+      final authModel = await authDataSource.register(
+        name: name,
+        password: password,
+        email: email,
+      );
 
-    return authModel.toEntity();
+      return authModel.toEntity();
+    } on ServerException catch (e) {
+      throw ServerFailure(message: e.message);
+    }
   }
 
   @override
   Future<void> forgotPassword({required String email}) async {
-    await authDataSource.forgotPassword(email: email);
+    try {
+      await authDataSource.forgotPassword(email: email);
+    } on ServerException catch (e) {
+      throw ServerFailure(message: e.message);
+    }
   }
 
   @override
   Future<void> logOut() async {
-    await authDataSource.logOut();
+    try {
+      await authDataSource.logOut();
+    } on ServerException catch (e) {
+      throw ServerFailure(message: e.message);
+    }
   }
 
   @override

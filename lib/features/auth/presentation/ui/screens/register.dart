@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lenguo_app/core/theme/app_colors.dart';
 import 'package:lenguo_app/core/theme/app_icons.dart';
 import 'package:lenguo_app/core/theme/app_text_style.dart';
+import 'package:lenguo_app/core/validator/field_validate.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_states.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/screens/login.dart';
@@ -69,14 +70,17 @@ class _RegisterState extends State<Register> {
                   ),
                   SizedBox(height: 50),
                   CustomTextFormField(
+                    validator: FieldValidator.username,
                     controller: nameController,
                     hintText: 'name',
                   ),
                   CustomTextFormField(
+                    validator: FieldValidator.email,
                     controller: emailController,
                     hintText: 'e-mail',
                   ),
                   CustomTextFormField(
+                    validator: FieldValidator.password,
                     controller: passwordController,
                     hintText: 'password',
                     isObsecure: isObsecure,

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import 'package:lenguo_app/core/errors/exceptions.dart';
+import 'package:lenguo_app/core/errors/failures.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_forgot_password.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_log_out.dart';
 import 'package:lenguo_app/features/auth/domain/usecases/auth_login_usecase.dart';
@@ -31,10 +31,10 @@ class AuthCubit extends Cubit<AuthState> {
       final user = await loginUseCase(email: email, password: password);
 
       emit(AuthSuccess(user));
-    } on ServerException catch (e) {
+    } on ServerFailure catch (e) {
       emit(AuthError(e.message));
     } catch (e) {
-      emit(AuthError(e.toString()));
+      emit(AuthError('Something went wrong. Please try again later.'));
     }
   }
 
@@ -51,10 +51,10 @@ class AuthCubit extends Cubit<AuthState> {
         password: password,
       );
       emit(AuthSuccess(user));
-    } on ServerException catch (e) {
+    } on ServerFailure catch (e) {
       emit(AuthError(e.message));
     } catch (e) {
-      emit(AuthError(e.toString()));
+      emit(AuthError('Something went wrong. Please try again later.'));
     }
   }
 
@@ -63,10 +63,10 @@ class AuthCubit extends Cubit<AuthState> {
     try {
       await forgotPasswordUseCase(email);
       emit(ForgotPasswordSuccess());
-    } on ServerException catch (e) {
+    } on ServerFailure catch (e) {
       emit(AuthError(e.message));
     } catch (e) {
-      emit(AuthError(e.toString()));
+      emit(AuthError('Something went wrong. Please try again later.'));
     }
   }
 
@@ -75,10 +75,10 @@ class AuthCubit extends Cubit<AuthState> {
     try {
       await logOutUseCase();
       emit(LogoutSuccess());
-    } on ServerException catch (e) {
+    } on ServerFailure catch (e) {
       emit(AuthError(e.message));
     } catch (e) {
-      emit(AuthError(e.toString()));
+      emit(AuthError('Something went wrong. Please try again later.'));
     }
   }
 
@@ -89,10 +89,10 @@ class AuthCubit extends Cubit<AuthState> {
       final user = await signInWithGoogleUseCase();
 
       emit(AuthSuccess(user));
-    } on ServerException catch (e) {
+    } on ServerFailure catch (e) {
       emit(AuthError(e.message));
     } catch (e) {
-      emit(AuthError(e.toString()));
+      emit(AuthError('Something went wrong. Please try again later.'));
     }
   }
 }

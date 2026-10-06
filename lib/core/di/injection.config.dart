@@ -12,12 +12,13 @@
 import 'package:firebase_auth/firebase_auth.dart' as _i59;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
+import 'package:lenguo_app/core/language/current_language.dart' as _i642;
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source.dart'
     as _i231;
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source_impl.dart'
     as _i1035;
-import 'package:lenguo_app/features/auth/data/reposatory/auth_repositorr_impl.dart'
-    as _i800;
+import 'package:lenguo_app/features/auth/data/reposatory/auth_repository_impl.dart'
+    as _i1;
 import 'package:lenguo_app/features/auth/domain/repository/auth_repository.dart'
     as _i987;
 import 'package:lenguo_app/features/auth/domain/usecases/auth_forgot_password.dart'
@@ -54,8 +55,10 @@ import 'package:lenguo_app/features/vocablaries/data/repository/vocblaries_repos
     as _i84;
 import 'package:lenguo_app/features/vocablaries/domain/repository/vocablaries_repository.dart'
     as _i339;
-import 'package:lenguo_app/features/vocablaries/domain/usecase/vocablaries_usecase.dart'
-    as _i126;
+import 'package:lenguo_app/features/vocablaries/domain/usecase/vocablaries_get_usecase.dart'
+    as _i660;
+import 'package:lenguo_app/features/vocablaries/presentation/cubit/vocablaries_cubit.dart'
+    as _i913;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -67,6 +70,7 @@ extension GetItInjectableX on _i174.GetIt {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     final firebaseModule = _$FirebaseModule();
     final sharedPreferencesModule = _$SharedPreferencesModule();
+    final currentLanguageModule = _$CurrentLanguageModule();
     gh.factory<_i59.FirebaseAuth>(() => firebaseModule.firebaseAuth);
     await gh.factoryAsync<_i460.SharedPreferences>(
       () => sharedPreferencesModule.sharedPreferences,
@@ -89,15 +93,15 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i1035.AuthDataSourceImpl(gh<_i59.FirebaseAuth>()),
     );
     gh.factory<_i987.AuthRepository>(
-      () => _i800.AuthRepositoryImpl(gh<_i231.AuthDataSource>()),
+      () => _i1.AuthRepositoryImpl(gh<_i231.AuthDataSource>()),
     );
     gh.factory<_i243.LanguageSelectionRepository>(
       () => _i382.LanguageSelectionRepositoryImpl(
         localDataSource: gh<_i101.LanguageSelectionDatasource>(),
       ),
     );
-    gh.factory<_i126.GetVocabulary>(
-      () => _i126.GetVocabulary(gh<_i339.VocabulariesRepository>()),
+    gh.factory<_i660.VocabulariesGetUseCase>(
+      () => _i660.VocabulariesGetUseCase(gh<_i339.VocabulariesRepository>()),
     );
     gh.factory<_i239.LanguageSelectionGetSelectedLanguageUsecase>(
       () => _i239.LanguageSelectionGetSelectedLanguageUsecase(
@@ -108,6 +112,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i244.LanguageSelectionSetSelectedLanguageUsecase(
         repository: gh<_i243.LanguageSelectionRepository>(),
       ),
+    );
+    gh.factory<_i913.VocabulariesCubit>(
+      () => _i913.VocabulariesCubit(gh<_i660.VocabulariesGetUseCase>()),
     );
     gh.factory<_i564.AuthForgotPassword>(
       () => _i564.AuthForgotPassword(gh<_i987.AuthRepository>()),
@@ -124,12 +131,17 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i757.AuthSignInWithGoogle>(
       () => _i757.AuthSignInWithGoogle(gh<_i987.AuthRepository>()),
     );
-    gh.factory<_i843.LanguageSelectionCubit>(
+    gh.lazySingleton<_i843.LanguageSelectionCubit>(
       () => _i843.LanguageSelectionCubit(
         getSelectedLanguageUseCase:
             gh<_i239.LanguageSelectionGetSelectedLanguageUsecase>(),
         setSelectedLanguageUseCase:
             gh<_i244.LanguageSelectionSetSelectedLanguageUsecase>(),
+      ),
+    );
+    gh.factory<_i642.CurrentLanguage>(
+      () => currentLanguageModule.currentLanguage(
+        gh<_i843.LanguageSelectionCubit>(),
       ),
     );
     gh.factory<_i524.AuthCubit>(
@@ -148,3 +160,5 @@ extension GetItInjectableX on _i174.GetIt {
 class _$FirebaseModule extends _i1035.FirebaseModule {}
 
 class _$SharedPreferencesModule extends _i722.SharedPreferencesModule {}
+
+class _$CurrentLanguageModule extends _i642.CurrentLanguageModule {}

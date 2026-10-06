@@ -7,6 +7,7 @@ import 'package:lenguo_app/core/di/injection.dart';
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:lenguo_app/features/auth/presentation/ui/screens/login.dart';
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_cubit.dart';
+import 'package:lenguo_app/features/vocablaries/presentation/cubit/vocablaries_cubit.dart';
 import 'package:lenguo_app/firebase_options.dart';
 
 Future<void> main() async {
@@ -30,6 +31,9 @@ class LenguoApp extends StatelessWidget {
 
         BlocProvider<LanguageSelectionCubit>(
           create: (context) => sl<LanguageSelectionCubit>(),
+        ),
+        BlocProvider<VocabulariesCubit>(
+          create: (context) => sl<VocabulariesCubit>(),
         ),
       ],
       child: MaterialApp(debugShowCheckedModeBanner: false, home: Login()),
