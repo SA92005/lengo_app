@@ -3,10 +3,10 @@ import 'package:lenguo_app/features/vocablaries/domain/entity/vocablaries_entity
 import 'package:lenguo_app/features/vocablaries/domain/repository/vocablaries_repository.dart';
 
 @injectable
-class GetVocabulary {
+class VocabulariesGetUseCase {
   final VocabulariesRepository repository;
 
-  GetVocabulary(this.repository);
+  VocabulariesGetUseCase(this.repository);
 
   Future<List<VocablariesEntity>> call(String category) {
     return repository.getVocabulary(category);

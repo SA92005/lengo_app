@@ -1,4 +1,6 @@
 import 'package:injectable/injectable.dart';
+import 'package:lenguo_app/core/errors/exceptions.dart';
+import 'package:lenguo_app/core/errors/failures.dart';
 import 'package:lenguo_app/features/vocablaries/data/datasource/vocablaries_datasource.dart';
 import 'package:lenguo_app/features/vocablaries/domain/entity/vocablaries_entity.dart';
 import 'package:lenguo_app/features/vocablaries/domain/repository/vocablaries_repository.dart';
@@ -11,7 +13,11 @@ class VocabulariesRepositoryImpl implements VocabulariesRepository {
 
   @override
   Future<List<VocablariesEntity>> getVocabulary(String category) async {
-    final models = await dataSource.getVocabulary(category);
-    return models.map((model) => model.toEntity()).toList();
+    try {
+      final models = await dataSource.getVocabulary(category);
+      return models.map((model) => model.toEntity()).toList();
+    } on CacheException catch (e) {
+      throw CacheFailure(message: e.message);
+    }
   }
 }

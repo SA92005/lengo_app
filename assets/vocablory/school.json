@@ -1,0 +1,244 @@
+
+[
+  {
+    "id": "1",
+    "word": "School",
+    "translation": "مدرسة",
+    "example": "I go to school every day.",
+    "exampleTranslation": "أذهب إلى المدرسة كل يوم.",
+    "imageUrl": "https://i.pinimg.com/474x/da/0b/8a/da0b8a73587be2b85df3a6d62ad22f67.jpg?nii=t"
+  },
+  {
+    "id": "2",
+    "word": "Teacher",
+    "translation": "معلم",
+    "example": "The teacher is explaining the lesson.",
+    "exampleTranslation": "المعلم يشرح الدرس.",
+    "imageUrl": "https://vawsum.com/wp-content/uploads/2019/07/pexels-max-fischer-5212345-1024x683.jpg"
+  },
+  {
+    "id": "3",
+    "word": "Student",
+    "translation": "طالب",
+    "example": "The student is studying.",
+    "exampleTranslation": "الطالب يذاكر.",
+    "imageUrl": "https://itslearning.com/hs-fs/hubfs/study_blog_banner.png?width=300&name=study_blog_banner.png"
+  },
+  {
+    "id": "4",
+    "word": "Classroom",
+    "translation": "فصل دراسي",
+    "example": "The students are in the classroom.",
+    "exampleTranslation": "الطلاب في الفصل الدراسي.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDE5osZHoiYtIQm9aOq7P_xQ80yFRZkgGl1lu2boss62pfUcu32A4kZHV&s=10"
+  },
+  {
+    "id": "5",
+    "word": "Board",
+    "translation": "سبورة",
+    "example": "The teacher writes on the board.",
+    "exampleTranslation": "المعلم يكتب على السبورة.",
+    "imageUrl": "https://i.pinimg.com/736x/fe/3f/3f/fe3f3f77c5032e8006ccd56ce54405fc.jpg"
+  },
+  {
+    "id": "6",
+    "word": "Desk",
+    "translation": "مكتب",
+    "example": "My book is on the desk.",
+    "exampleTranslation": "كتابي على المكتب.",
+    "imageUrl": "https://www.nilkamaledge.com/cdn/shop/files/Sensi12345_3.jpg?v=1703153057"
+  },
+  {
+    "id": "7",
+    "word": "Chair",
+    "translation": "كرسي",
+    "example": "I am sitting on a chair.",
+    "exampleTranslation": "أنا أجلس على كرسي.",
+    "imageUrl": "https://radfurniture.com/cdn/shop/files/SC-SCHR014-4A.jpg?v=1708477244"
+  },
+  {
+    "id": "8",
+    "word": "Book",
+    "translation": "كتاب",
+    "example": "I am reading a book.",
+    "exampleTranslation": "أنا أقرأ كتابًا.",
+    "imageUrl": "https://cdn.theatlantic.com/thumbor/iiuDdmz4ogmRYmYfUH7X8-Rs6eQ=/438x0:1563x1125/1080x1080/media/img/mt/2024/06/books/original.jpg"
+  },
+  {
+    "id": "9",
+    "word": "Notebook",
+    "translation": "دفتر",
+    "example": "I write my notes in my notebook.",
+    "exampleTranslation": "أكتب ملاحظاتي في دفتري.",
+    "imageUrl": "https://www.digitalprinting.co.uk/media/slideshows/dp/614/school-notebooks-wiro-bound%20(2).jpg"
+  },
+  {
+    "id": "10",
+    "word": "Pen",
+    "translation": "قلم",
+    "example": "I write with a pen.",
+    "exampleTranslation": "أنا أكتب بقلم.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfbikztfqmmdYh3u3n7NkEkoXyHPUPAAvTssvLT6T3A&s=10"
+  },
+  {
+    "id": "11",
+    "word": "Pencil",
+    "translation": "قلم رصاص",
+    "example": "I draw with a pencil.",
+    "exampleTranslation": "أرسم بقلم رصاص.",
+    "imageUrl": "https://www.toysmith.com/cdn/shop/files/3822-1000.jpg?v=1755549950&width=1500"
+  },
+  {
+    "id": "12",
+    "word": "Ruler",
+    "translation": "مسطرة",
+    "example": "I use a ruler to draw a straight line.",
+    "exampleTranslation": "أستخدم المسطرة لرسم خط مستقيم.",
+    "imageUrl": "https://cld-assets.dick-blick.com/image/upload/f_auto/q_auto/v1748376078/55427-1112-4ww.jpg"
+  },
+  {
+    "id": "13",
+    "word": "Eraser",
+    "translation": "ممحاة",
+    "example": "I use an eraser to remove the mistake.",
+    "exampleTranslation": "أستخدم الممحاة لإزالة الخطأ.",
+    "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/ST52650OW_staedtler_mars_plastic_eraser.jpg"
+  },
+  {
+    "id": "14",
+    "word": "Backpack",
+    "translation": "حقيبة ظهر",
+    "example": "My backpack is full of books.",
+    "exampleTranslation": "حقيبة ظهري مليئة بالكتب.",
+    "imageUrl": "https://m.media-amazon.com/images/I/61KzR7KS25L._AC_SX569_.jpg"
+  },
+  {
+    "id": "15",
+    "word": "Lesson",
+    "translation": "درس",
+    "example": "Today's lesson is interesting.",
+    "exampleTranslation": "درس اليوم ممتع.",
+    "imageUrl": "https://www.scholastic.com/content/dam/scholastic/educators/articles/teacher-start-lesson-16-9.jpg.corpimagerendition.xxl.1400.788.png"
+  },
+  {
+    "id": "16",
+    "word": "Homework",
+    "translation": "واجب منزلي",
+    "example": "I finished my homework.",
+    "exampleTranslation": "أنهيت واجبي المنزلي.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZb-IB4p_7OUg3PEIyrXiDxoddia_egR_detsBSVsRFLRdBwaroDUPnTE&s=10"
+  },
+  {
+    "id": "17",
+    "word": "Exam",
+    "translation": "امتحان",
+    "example": "I have an exam tomorrow.",
+    "exampleTranslation": "لدي امتحان غدًا.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Donboscocambodia0001.JPG/250px-Donboscocambodia0001.JPG"
+  },
+  {
+    "id": "18",
+    "word": "Question",
+    "translation": "سؤال",
+    "example": "The teacher asked a question.",
+    "exampleTranslation": "المعلم طرح سؤالًا.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT06blyId-B55AXIJO0ZhlXOPEobQG_L1JjwEGlxQ8Z0Q&s=10"
+  },
+  {
+    "id": "19",
+    "word": "Answer",
+    "translation": "إجابة",
+    "example": "I know the answer.",
+    "exampleTranslation": "أنا أعرف الإجابة.",
+    "imageUrl": "https://www.wikihow.com/images/thumb/1/1f/Hardest-Questions-to-Answer-Step-11-Version-2.jpg/v4-460px-Hardest-Questions-to-Answer-Step-11-Version-2.jpg"
+  },
+  {
+    "id": "20",
+    "word": "Grade",
+    "translation": "درجة",
+    "example": "I got a good grade in the exam.",
+    "exampleTranslation": "حصلت على درجة جيدة في الامتحان.",
+    "imageUrl": "https://images.shiksha.com/mediadata/images/articles/1714497349phpGFcSQK.jpeg"
+  },
+  {
+    "id": "21",
+    "word": "Friend",
+    "translation": "صديق",
+    "example": "My friend sits next to me.",
+    "exampleTranslation": "صديقي يجلس بجانبي.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ijGpK40e0weYtLb3w6dv9vN337X1_j93hcNz4c1GsA&s=10"
+  },
+  {
+    "id": "22",
+    "word": "Classmate",
+    "translation": "زميل دراسة",
+    "example": "My classmate helped me with the homework.",
+    "exampleTranslation": "زميلي في الدراسة ساعدني في الواجب.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBReg_U_pE2SId2DLeRyIhBspEqCOcVZ6StYSbvkLFlw&s=10"
+  },
+  {
+    "id": "23",
+    "word": "Principal",
+    "translation": "مدير المدرسة",
+    "example": "The principal is in the office.",
+    "exampleTranslation": "مدير المدرسة في المكتب.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl9nb5aMMI9jnOS8gPyuJoDbf3PItPYi2qsKyQxEQO8vMzyY06kNyNcR8W&s=10"
+  },
+  {
+    "id": "24",
+    "word": "Playground",
+    "translation": "ملعب",
+    "example": "The students are playing in the playground.",
+    "exampleTranslation": "الطلاب يلعبون في الملعب.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWnx-Gvjyfwg7fvVdlrilXAc1NNlirq1OajgMDwj0G9g&s=10"
+  },
+  {
+    "id": "25",
+    "word": "Library",
+    "translation": "مكتبة",
+    "example": "I borrowed a book from the library.",
+    "exampleTranslation": "استعرت كتابًا من المكتبة.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtTw1d3hOND5zViHmOiW2O1gEKKuQYT-9QiSIf1WE7w&s=10"
+  },
+  {
+    "id": "26",
+    "word": "Laboratory",
+    "translation": "معمل",
+    "example": "We did an experiment in the laboratory.",
+    "exampleTranslation": "أجرينا تجربة في المعمل.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9zvyZdht-Zt4hpxhhCmzEbiiE5V_F4DhT5Q_w96l8N9gwRpVZhIvCNUf&s=10"
+  },
+  {
+    "id": "27",
+    "word": "Computer",
+    "translation": "حاسوب",
+    "example": "The students use the computer in class.",
+    "exampleTranslation": "الطلاب يستخدمون الحاسوب في الفصل.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Y0XujOJ0ykjUhwu_R085YxPALkkj39GAzBVt53XksQ&s=10"
+  },
+  {
+    "id": "28",
+    "word": "Uniform",
+    "translation": "زي مدرسي",
+    "example": "I wear my school uniform every day.",
+    "exampleTranslation": "أرتدي الزي المدرسي كل يوم.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oiL9DtoXcRhpFlvnDLYws9u-bhaHRCKG-ALGFZdM0g&s=10"
+  },
+  {
+    "id": "29",
+    "word": "Break",
+    "translation": "استراحة",
+    "example": "We have a break after the second lesson.",
+    "exampleTranslation": "لدينا استراحة بعد الدرس الثاني.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIT-2OdbFcYQuPnHsFN8FUY1FgWyuZ6ShOTzhhcXEWxQ&s=10"
+  },
+  {
+    "id": "30",
+    "word": "Subject",
+    "translation": "مادة دراسية",
+    "example": "English is my favorite subject.",
+    "exampleTranslation": "اللغة الإنجليزية مادتي المفضلة.",
+    "imageUrl": "https://template.canva.com/EAHL-VaioKI/1/0/1131w-x4jhC-bKs0Y.jpg"
+  }
+]
+

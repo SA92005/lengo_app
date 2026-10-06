@@ -21,4 +21,11 @@ abstract class AppTextStyle {
     color: AppColors.primaryColor,
   );
   static const TextStyle hintStyle = TextStyle(color: AppColors.greyColor);
+
+  static const TextStyle exampleTranslation = TextStyle(
+    color: AppColors.subtitleColor,
+    fontSize: 15,
+    height: 1.5,
+    fontWeight: FontWeight.bold,
+  );
 }
