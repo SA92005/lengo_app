@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:injectable/injectable.dart';
 import 'package:lenguo_app/core/errors/exceptions.dart';
+import 'package:lenguo_app/core/errors/firebase_error_maper.dart';
 import 'package:lenguo_app/features/auth/data/data_source/auth_data_source.dart';
 import 'package:lenguo_app/features/auth/data/models/auth_model.dart';
 
@@ -24,7 +25,7 @@ class AuthDataSourceImpl implements AuthDataSource {
 
       return AuthModel.fromFirebase(userCredential.user!);
     } on FirebaseAuthException catch (e) {
-      throw ServerException(message: e.message ?? 'Login failed');
+      throw ServerException(message: FirebaseErrorMaper.map(e.code));
     }
   }
 
@@ -44,7 +45,7 @@ class AuthDataSourceImpl implements AuthDataSource {
 
       return AuthModel.fromFirebase(userCredential.user!);
     } on FirebaseAuthException catch (e) {
-      throw ServerException(message: e.message ?? 'Registration failed');
+      throw ServerException(message: FirebaseErrorMaper.map(e.code));
     }
   }
 
@@ -53,7 +54,7 @@ class AuthDataSourceImpl implements AuthDataSource {
     try {
       await firebaseAuth.sendPasswordResetEmail(email: email);
     } on FirebaseAuthException catch (e) {
-      throw ServerException(message: e.message ?? 'Failed to send reset email');
+      throw ServerException(message: FirebaseErrorMaper.map(e.code));
     }
   }
 
@@ -62,7 +63,7 @@ class AuthDataSourceImpl implements AuthDataSource {
     try {
       await firebaseAuth.signOut();
     } on FirebaseAuthException catch (e) {
-      throw ServerException(message: e.message ?? 'Logout failed');
+      throw ServerException(message: FirebaseErrorMaper.map(e.code));
     }
   }
 

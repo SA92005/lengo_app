@@ -10,23 +10,29 @@ class ContainerSelection extends StatelessWidget {
     required this.subtitle1,
     required this.subtitle2,
     required this.onTap,
+    required this.isSelected,
   });
+
   final String photoPath;
   final String title;
   final String subtitle1;
   final String subtitle2;
   final void Function()? onTap;
+  final bool? isSelected;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         height: 130,
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: AppColors.languageSelectionColor,
+          color: isSelected!
+              ? AppColors.photoColor
+              : AppColors.languageSelectionColor,
           border: Border.all(
             color: AppColors.languageSelectionBorder,
             width: 3,
