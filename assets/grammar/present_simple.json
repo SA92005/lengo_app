@@ -1,0 +1,110 @@
+{
+  "name": "Present Simple",
+  "nameAr": "المضارع البسيط",
+
+  "explanation": "نستخدم المضارع البسيط للتحدث عن العادات والروتين والحقائق والأشياء التي تحدث بشكل متكرر.",
+
+  "uses": [
+    "العادات والأشياء التي نفعلها بشكل متكرر.",
+    "الروتين اليومي.",
+    "الحقائق والمعلومات الثابتة.",
+    "الأشياء التي تحدث بشكل منتظم."
+  ],
+
+  "structure": {
+    "i_you_we_they": "I / You / We / They + الفعل",
+    "he_she_it": "He / She / It + الفعل + s / es"
+  },
+
+  "verbRules": [
+    {
+      "rule": "معظم الأفعال",
+      "form": "الفعل + s",
+      "examples": [
+        "play → plays",
+        "read → reads",
+        "eat → eats",
+        "work → works"
+      ]
+    },
+    {
+      "rule": "الأفعال التي تنتهي بـ s أو sh أو ch أو x أو o أو z",
+      "form": "الفعل + es",
+      "examples": [
+        "watch → watches",
+        "wash → washes",
+        "fix → fixes",
+        "go → goes",
+        "pass → passes"
+      ]
+    },
+    {
+      "rule": "إذا انتهى الفعل بـ y وقبلها حرف ساكن",
+      "form": "نحذف y ونضيف ies",
+      "examples": [
+        "study → studies",
+        "try → tries",
+        "fly → flies"
+      ]
+    },
+    {
+      "rule": "إذا انتهى الفعل بـ y وقبلها حرف متحرك",
+      "form": "الفعل + s",
+      "examples": [
+        "play → plays",
+        "enjoy → enjoys",
+        "buy → buys"
+      ]
+    }
+  ],
+
+  "signalWords": [
+    {
+      "english": "Always",
+      "arabic": "دائمًا"
+    },
+    {
+      "english": "Usually",
+      "arabic": "عادةً"
+    },
+    {
+      "english": "Often",
+      "arabic": "غالبًا"
+    },
+    {
+      "english": "Sometimes",
+      "arabic": "أحيانًا"
+    },
+    {
+      "english": "Never",
+      "arabic": "أبدًا"
+    },
+    {
+      "english": "Every day",
+      "arabic": "كل يوم"
+    },
+    {
+      "english": "Every week",
+      "arabic": "كل أسبوع"
+    },
+    {
+      "english": "Every month",
+      "arabic": "كل شهر"
+    },
+    {
+      "english": "Every year",
+      "arabic": "كل سنة"
+    }
+  ],
+
+  "examples": [
+    {
+      "english": "I play football every day.",
+      "arabic": "أنا ألعب كرة القدم كل يوم."
+    },
+    {
+      "english": "She studies English every day.",
+      "arabic": "هي تدرس الإنجليزية كل يوم."
+    }
+  ]
+}

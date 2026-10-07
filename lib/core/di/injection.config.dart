@@ -33,6 +33,10 @@ import 'package:lenguo_app/features/auth/domain/usecases/auth_sign_in_with_googl
     as _i757;
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart'
     as _i524;
+import 'package:lenguo_app/features/grammar/domain/repository/grammar_repository.dart'
+    as _i918;
+import 'package:lenguo_app/features/grammar/domain/usecase/get_garammar_usecase.dart'
+    as _i729;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource.dart'
     as _i101;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource_impl.dart'
@@ -78,6 +82,9 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i1037.VocabulariesDataSource>(
       () => _i160.VocabulariesDatasourceImpl(),
+    );
+    gh.factory<_i729.GetGarammarUsecase>(
+      () => _i729.GetGarammarUsecase(gh<_i918.GrammarRepository>()),
     );
     gh.factory<_i339.VocabulariesRepository>(
       () => _i84.VocabulariesRepositoryImpl(
