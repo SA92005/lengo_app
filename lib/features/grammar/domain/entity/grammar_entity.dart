@@ -1,4 +1,5 @@
 import 'package:lenguo_app/features/grammar/domain/entity/grammar_examples_entity.dart';
+import 'package:lenguo_app/features/grammar/domain/entity/grammar_signal_words_entity.dart';
 import 'package:lenguo_app/features/grammar/domain/entity/grammar_structure_entity.dart';
 import 'package:lenguo_app/features/grammar/domain/entity/grammar_verb_rules_entity.dart';
 
@@ -10,6 +11,7 @@ class GrammarEntity {
   final GrammarStructureEntity structure;
   final List<GrammarVerbRulesEntity> verbRules;
   final List<GrammarExamplesEntity> examples;
+  final List<GrammarSignalWordsEntity> signalWords;
 
   GrammarEntity({
     required this.name,
@@ -19,5 +21,6 @@ class GrammarEntity {
     required this.structure,
     required this.verbRules,
     required this.examples,
+    required this.signalWords,
   });
 }
