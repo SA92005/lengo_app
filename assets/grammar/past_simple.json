@@ -1,0 +1,101 @@
+{
+  "name": "Past Simple",
+  "nameAr": "الماضي البسيط",
+
+  "explanation": "نستخدم الماضي البسيط للتحدث عن أشياء أو أحداث حدثت وانتهت في الماضي.",
+
+  "uses": [
+    "الأحداث التي حدثت وانتهت في الماضي.",
+    "الأشياء التي حدثت في وقت محدد في الماضي.",
+    "العادات التي كانت تحدث في الماضي.",
+    "الأحداث المتتابعة التي حدثت في الماضي."
+  ],
+
+  "structure": {
+    "i_you_we_they": "I / You / We / They + الفعل في الماضي",
+    "he_she_it": "He / She / It + الفعل في الماضي"
+  },
+
+  "verbRules": [
+    {
+      "rule": "معظم الأفعال المنتظمة",
+      "form": "الفعل + ed",
+      "examples": [
+        "play → played",
+        "work → worked",
+        "clean → cleaned",
+        "watch → watched"
+      ]
+    },
+    {
+      "rule": "الأفعال التي تنتهي بـ e",
+      "form": "الفعل + d",
+      "examples": [
+        "live → lived",
+        "love → loved",
+        "move → moved"
+      ]
+    },
+    {
+      "rule": "إذا انتهى الفعل بـ y وقبلها حرف ساكن",
+      "form": "نحذف y ونضيف ied",
+      "examples": [
+        "study → studied",
+        "try → tried",
+        "carry → carried"
+      ]
+    },
+    {
+      "rule": "الأفعال الشاذة",
+      "form": "يتغير شكل الفعل",
+      "examples": [
+        "go → went",
+        "eat → ate",
+        "see → saw",
+        "buy → bought"
+      ]
+    }
+  ],
+
+  "signalWords": [
+    {
+      "english": "Yesterday",
+      "arabic": "أمس"
+    },
+    {
+      "english": "Last week",
+      "arabic": "الأسبوع الماضي"
+    },
+    {
+      "english": "Last month",
+      "arabic": "الشهر الماضي"
+    },
+    {
+      "english": "Last year",
+      "arabic": "السنة الماضية"
+    },
+    {
+      "english": "Ago",
+      "arabic": "منذ"
+    },
+    {
+      "english": "Last night",
+      "arabic": "الليلة الماضية"
+    },
+    {
+      "english": "In 2020",
+      "arabic": "في عام 2020"
+    }
+  ],
+
+  "examples": [
+    {
+      "english": "I played football yesterday.",
+      "arabic": "لعبت كرة القدم أمس."
+    },
+    {
+      "english": "She visited her grandmother last week.",
+      "arabic": "زارت جدتها الأسبوع الماضي."
+    }
+  ]
+}

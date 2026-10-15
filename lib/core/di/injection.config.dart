@@ -43,6 +43,8 @@ import 'package:lenguo_app/features/grammar/domain/repository/grammar_repository
     as _i918;
 import 'package:lenguo_app/features/grammar/domain/usecase/get_garammar_usecase.dart'
     as _i729;
+import 'package:lenguo_app/features/grammar/presentation/cubit/grammar_cubit.dart'
+    as _i155;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource.dart'
     as _i101;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource_impl.dart'
@@ -156,6 +158,11 @@ extension GetItInjectableX on _i174.GetIt {
             gh<_i239.LanguageSelectionGetSelectedLanguageUsecase>(),
         setSelectedLanguageUseCase:
             gh<_i244.LanguageSelectionSetSelectedLanguageUsecase>(),
+      ),
+    );
+    gh.factory<_i155.GrammarCubit>(
+      () => _i155.GrammarCubit(
+        getGarammarUsecase: gh<_i729.GetGarammarUsecase>(),
       ),
     );
     gh.factory<_i642.CurrentLanguage>(

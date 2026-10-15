@@ -1,4 +1,4 @@
-class CategoryList {
+class VocabsList {
   static const List<Map<String, String>> categories = [
     {
       'name': 'Animals',

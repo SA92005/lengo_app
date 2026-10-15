@@ -7,7 +7,7 @@ import 'package:lenguo_app/features/language_selection/domain/entity/language_se
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_cubit.dart';
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_state.dart';
 import 'package:lenguo_app/features/language_selection/presentation/ui/widgets/container_selection.dart';
-import 'package:lenguo_app/features/vocablaries/presentation/ui/screens/categories_screen.dart';
+import 'package:lenguo_app/home.dart';
 
 class SelectionScreen extends StatefulWidget {
   final bool isFirstSelection;
@@ -48,7 +48,7 @@ class _SelectionScreenState extends State<SelectionScreen> {
             if (widget.isFirstSelection && state is LanguageSelectionSuccess) {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (_) => const CategoriesScreen()),
+                MaterialPageRoute(builder: (_) => const Home()),
               );
             }
           },
@@ -125,9 +125,7 @@ class _SelectionScreenState extends State<SelectionScreen> {
 
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const CategoriesScreen(),
-                      ),
+                      MaterialPageRoute(builder: (context) => const Home()),
                     );
                   },
                   text: "Continue",

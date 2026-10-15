@@ -22,6 +22,19 @@ class _VocabularyDetailsScreenState extends State<VocabularyDetailsScreen> {
   final FlutterTts flutterTts = FlutterTts();
 
   @override
+  void initState() {
+    super.initState();
+    _initTts();
+  }
+
+  Future<void> _initTts() async {
+    await flutterTts.awaitSpeakCompletion(true);
+    await flutterTts.setSpeechRate(0.5);
+    await flutterTts.setVolume(1.0);
+    await flutterTts.setPitch(1.0);
+  }
+
+  @override
   void dispose() {
     flutterTts.stop();
     super.dispose();
@@ -76,7 +89,6 @@ Future<void> _speakWord(
   String word,
   String language,
 ) async {
-  await flutterTts.stop();
   await flutterTts.setLanguage(language);
   await flutterTts.speak(word);
 }
