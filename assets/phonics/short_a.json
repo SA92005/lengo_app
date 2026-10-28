@@ -1,0 +1,94 @@
+{
+  "id": "a_lesson_1",
+  "letter": "a",
+  "title": "Short A",
+  "titleAr": "صوت A القصير",
+  "category": "pronunciation",
+  "content": {
+    "rule": {
+      "title": "Short A Sound",
+      "titleAr": "قاعدة صوت A القصير",
+      "text": "The letter A often makes the short sound /æ/ in words like cat, map, and bag.",
+      "textAr": "حرف A غالبًا بيطلع الصوت القصير /æ/ في كلمات زي cat وmap وbag.",
+      "sound": "/æ/",
+      "pattern": "a + consonant"
+    },
+    "examples": [
+      {
+        "word": "cat",
+        "phonetic": "/kæt/",
+        "meaning": "قطة",
+        "sentence": "The cat is small.",
+        "sentenceAr": "القطة صغيرة."
+      },
+      {
+        "word": "map",
+        "phonetic": "/mæp/",
+        "meaning": "خريطة",
+        "sentence": "Look at the map.",
+        "sentenceAr": "انظر إلى الخريطة."
+      },
+      {
+        "word": "bag",
+        "phonetic": "/bæɡ/",
+        "meaning": "حقيبة",
+        "sentence": "My bag is black.",
+        "sentenceAr": "حقيبتي سوداء."
+      },
+      {
+        "word": "hat",
+        "phonetic": "/hæt/",
+        "meaning": "قبعة",
+        "sentence": "This is my hat.",
+        "sentenceAr": "هذه قبعتي."
+      },
+      {
+        "word": "apple",
+        "phonetic": "/ˈæpəl/",
+        "meaning": "تفاحة",
+        "sentence": "I eat an apple.",
+        "sentenceAr": "أنا آكل تفاحة."
+      }
+    ],
+    "pronunciationTips": [
+      {
+        "title": "Open Your Mouth",
+        "titleAr": "افتح فمك",
+        "text": "Open your mouth a little wider and keep the sound short.",
+        "textAr": "افتح فمك بدرجة مناسبة وخلي الصوت قصير من غير ما تمده."
+      },
+      {
+        "title": "Compare the Sounds",
+        "titleAr": "قارن بين الأصوات",
+        "text": "Do not confuse /æ/ in cat with /e/ in bed.",
+        "textAr": "ما تخلطش بين صوت /æ/ في cat وصوت /e/ في bed."
+      }
+    ]
+  },
+  "practice": [
+    {
+      "id": "a1_q1",
+      "type": "choose_answer",
+      "question": "Which word has the short A sound?",
+      "questionAr": "أي كلمة فيها صوت A القصير؟",
+      "options": ["cat", "cake", "bike"],
+      "correctAnswer": "cat"
+    },
+    {
+      "id": "a1_q2",
+      "type": "choose_answer",
+      "question": "What is the short A sound?",
+      "questionAr": "إيه صوت A القصير؟",
+      "options": ["/æ/", "/aɪ/", "/iː/"],
+      "correctAnswer": "/æ/"
+    },
+    {
+      "id": "a1_q3",
+      "type": "choose_answer",
+      "question": "Which word rhymes with map?",
+      "questionAr": "أي كلمة بتنتهي بنفس صوت map؟",
+      "options": ["hat", "cap", "home"],
+      "correctAnswer": "cap"
+    }
+  ]
+}

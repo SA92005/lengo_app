@@ -1,0 +1,94 @@
+{
+  "id": "a_lesson_2",
+  "letter": "a",
+  "title": "Long A",
+  "titleAr": "صوت A الطويل",
+  "category": "pronunciation",
+  "content": {
+    "rule": {
+      "title": "Long A Sound",
+      "titleAr": "قاعدة صوت A الطويل",
+      "text": "The letter A often says its name /eɪ/ in words with the a_e pattern, where the final E is silent.",
+      "textAr": "حرف A غالبًا بينطق اسمه /eɪ/ في كلمات على نمط a_e، وبيكون حرف E الأخير صامت.",
+      "sound": "/eɪ/",
+      "pattern": "a_e"
+    },
+    "examples": [
+      {
+        "word": "cake",
+        "phonetic": "/keɪk/",
+        "meaning": "كعكة",
+        "sentence": "I like cake.",
+        "sentenceAr": "أنا أحب الكعك."
+      },
+      {
+        "word": "name",
+        "phonetic": "/neɪm/",
+        "meaning": "اسم",
+        "sentence": "What is your name?",
+        "sentenceAr": "ما اسمك؟"
+      },
+      {
+        "word": "game",
+        "phonetic": "/ɡeɪm/",
+        "meaning": "لعبة",
+        "sentence": "This game is fun.",
+        "sentenceAr": "هذه اللعبة ممتعة."
+      },
+      {
+        "word": "late",
+        "phonetic": "/leɪt/",
+        "meaning": "متأخر",
+        "sentence": "I am late.",
+        "sentenceAr": "أنا متأخر."
+      },
+      {
+        "word": "plane",
+        "phonetic": "/pleɪn/",
+        "meaning": "طائرة",
+        "sentence": "The plane is big.",
+        "sentenceAr": "الطائرة كبيرة."
+      }
+    ],
+    "pronunciationTips": [
+      {
+        "title": "Silent E",
+        "titleAr": "حرف E الصامت",
+        "text": "The final E is usually silent, but it helps A make its long sound in words like cake.",
+        "textAr": "حرف E الأخير غالبًا مش بيتنطق، لكنه بيساعد A يطلع صوته الطويل في كلمات زي cake."
+      },
+      {
+        "title": "Listen to the Difference",
+        "titleAr": "اسمع الفرق",
+        "text": "Compare cap with cape. The final E changes the vowel sound.",
+        "textAr": "قارن بين cap وcape. حرف E الأخير بيغيّر صوت حرف العلة."
+      }
+    ]
+  },
+  "practice": [
+    {
+      "id": "a2_q1",
+      "type": "choose_answer",
+      "question": "Which word has the long A sound?",
+      "questionAr": "أي كلمة فيها صوت A الطويل؟",
+      "options": ["cake", "cat", "bag"],
+      "correctAnswer": "cake"
+    },
+    {
+      "id": "a2_q2",
+      "type": "choose_answer",
+      "question": "Which letter is silent in cake?",
+      "questionAr": "أي حرف صامت في كلمة cake؟",
+      "options": ["E", "K", "A"],
+      "correctAnswer": "E"
+    },
+    {
+      "id": "a2_q3",
+      "type": "choose_answer",
+      "question": "Which word has the same vowel sound as name?",
+      "questionAr": "أي كلمة فيها نفس صوت حرف العلة في name؟",
+      "options": ["game", "map", "hat"],
+      "correctAnswer": "game"
+    }
+  ]
+}
