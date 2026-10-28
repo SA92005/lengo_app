@@ -3,13 +3,13 @@ import 'package:lenguo_app/core/di/injection.dart';
 import 'package:lenguo_app/core/language/current_language.dart';
 import 'package:lenguo_app/core/theme/app_colors.dart';
 import 'package:lenguo_app/features/language_selection/presentation/ui/screens/selection_screen.dart';
-import 'package:lenguo_app/features/vocablaries/presentation/ui/category_list.dart';
+import 'package:lenguo_app/core/Lists/vocabs_list.dart';
 import 'package:lenguo_app/features/vocablaries/presentation/ui/screens/vocabs_screen.dart';
 import 'package:lenguo_app/features/vocablaries/presentation/ui/widgets/category_container.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
-  final List<Map<String, String>> categories = CategoryList.categories;
+  final List<Map<String, String>> categories = VocabsList.categories;
 
   @override
   Widget build(BuildContext context) {

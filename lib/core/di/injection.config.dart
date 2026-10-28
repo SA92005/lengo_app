@@ -33,10 +33,18 @@ import 'package:lenguo_app/features/auth/domain/usecases/auth_sign_in_with_googl
     as _i757;
 import 'package:lenguo_app/features/auth/presentation/cubit/auth_cubit.dart'
     as _i524;
+import 'package:lenguo_app/features/grammar/data/datasorce/grammar_datasorce.dart'
+    as _i777;
+import 'package:lenguo_app/features/grammar/data/datasorce/grammar_datasorce_impl.dart'
+    as _i207;
+import 'package:lenguo_app/features/grammar/data/repository/grammar_repository_impl.dart'
+    as _i1042;
 import 'package:lenguo_app/features/grammar/domain/repository/grammar_repository.dart'
     as _i918;
 import 'package:lenguo_app/features/grammar/domain/usecase/get_garammar_usecase.dart'
     as _i729;
+import 'package:lenguo_app/features/grammar/presentation/cubit/grammar_cubit.dart'
+    as _i155;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource.dart'
     as _i101;
 import 'package:lenguo_app/features/language_selection/data/datasource/language_selecton_datasource_impl.dart'
@@ -83,8 +91,11 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i1037.VocabulariesDataSource>(
       () => _i160.VocabulariesDatasourceImpl(),
     );
-    gh.factory<_i729.GetGarammarUsecase>(
-      () => _i729.GetGarammarUsecase(gh<_i918.GrammarRepository>()),
+    gh.factory<_i777.GrammarDataSource>(() => _i207.GrammarDataSourceImpl());
+    gh.factory<_i918.GrammarRepository>(
+      () => _i1042.GrammarRepositoryImpl(
+        dataSource: gh<_i777.GrammarDataSource>(),
+      ),
     );
     gh.factory<_i339.VocabulariesRepository>(
       () => _i84.VocabulariesRepositoryImpl(
@@ -106,6 +117,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i382.LanguageSelectionRepositoryImpl(
         localDataSource: gh<_i101.LanguageSelectionDatasource>(),
       ),
+    );
+    gh.factory<_i729.GetGarammarUsecase>(
+      () => _i729.GetGarammarUsecase(gh<_i918.GrammarRepository>()),
     );
     gh.factory<_i660.VocabulariesGetUseCase>(
       () => _i660.VocabulariesGetUseCase(gh<_i339.VocabulariesRepository>()),
@@ -144,6 +158,11 @@ extension GetItInjectableX on _i174.GetIt {
             gh<_i239.LanguageSelectionGetSelectedLanguageUsecase>(),
         setSelectedLanguageUseCase:
             gh<_i244.LanguageSelectionSetSelectedLanguageUsecase>(),
+      ),
+    );
+    gh.factory<_i155.GrammarCubit>(
+      () => _i155.GrammarCubit(
+        getGarammarUsecase: gh<_i729.GetGarammarUsecase>(),
       ),
     );
     gh.factory<_i642.CurrentLanguage>(
