@@ -74,6 +74,7 @@ flutter:
       - assets/images/
       - assets/vocablory/
       - assets/grammar/
+      - assets/phonics/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

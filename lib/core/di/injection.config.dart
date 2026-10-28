@@ -59,6 +59,10 @@ import 'package:lenguo_app/features/language_selection/domain/usecase/language_s
     as _i244;
 import 'package:lenguo_app/features/language_selection/presentation/cubit/language_selection_cubit.dart'
     as _i843;
+import 'package:lenguo_app/features/phonics/domain/repository/phonics_repository.dart'
+    as _i317;
+import 'package:lenguo_app/features/phonics/domain/usecase/phonics_usecase.dart'
+    as _i995;
 import 'package:lenguo_app/features/vocablaries/data/datasource/vocablaries_datasource.dart'
     as _i1037;
 import 'package:lenguo_app/features/vocablaries/data/datasource/vocblaries_datasource_impl.dart'
@@ -101,6 +105,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i84.VocabulariesRepositoryImpl(
         dataSource: gh<_i1037.VocabulariesDataSource>(),
       ),
+    );
+    gh.factory<_i995.PhonicsUsecase>(
+      () => _i995.PhonicsUsecase(gh<_i317.PhonicsRepository>()),
     );
     gh.factory<_i101.LanguageSelectionDatasource>(
       () => _i722.LanguageSelectionDatasourceImpl(
